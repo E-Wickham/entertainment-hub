@@ -2,5 +2,7 @@
 ## Tasklist
 - [x] Create Repo
 - [x] Invite Members
-- [ ] Mockup
-
+- [x] Mockup
+- [ ] Header/Footer/Nav
+- [ ] User/Admin Interface
+- [ ] Homepage
