@@ -1,0 +1,269 @@
+/*
+
+CSS STYLES FOR PHP ASSIGNMENT 
+
+
+========================================================================
+|   TABLE OF CONTENTS                                                  |
+|                                                                      |
+|                                                                      |
+|   01. LANDING PAGE AND PAGEWIDE BRANDING                             |
+|   02. REGISTRATION FORM                                              |
+|   03. FLEXBOX HERO DIV                                               | 
+|   04. FLEXBOX INFO SECTION DIV                                       |
+|   05. SMITAL MOVIE SLIDER DIV                                        |
+|   06. TOP TEN MOVIES                                                 |
+|   07. FOOTER                                                         |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|                                                                      |
+|   999. MEDIA QUERIES                                                 |
+========================================================================
+
+
+
+// 01. BASIC LAYOUT AND HOME PAGE */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+h1 {
+   font-weight: 900;
+   font-size: 3em; 
+   margin-left: 90px;
+   color: white;
+
+}
+
+
+
+
+/*NATALIA FEEL FREE TO TAKE THIS OUT AND IMPLEMENT YOUR OWN CODE FOR THE NAV - THIS IS JUST A PLACEHOLDER */
+.nav {
+    height: 115px;
+    background-color: #0F5F91;
+    width: 100%;
+}
+
+
+#hero-landing {
+    background-image: linear-gradient(to bottom, rgba(15, 95, 145, 0.5), rgba(117, 19, 93, 0)), url("../assets/heroimg.jpg");
+    height: 500px; /* Temporary for layout */
+    padding: 20px;
+}
+
+
+/* 02. REGISTER FORM  */
+
+#register {
+    border: solid 2px black;
+    border-radius: 5px;
+
+    float: right;
+    position: relative;
+    bottom: 80px;
+
+
+    width: 300px;
+    margin-right: 90px;
+    padding: 15px;
+
+    background-color: rgba(255,255,255,0.9)
+
+}
+
+
+
+#register-btn {
+    padding: 12px;
+    margin-top: 10px;
+    background-color:#0F5F91;
+    border-radius: 5px;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+}
+
+
+/* 03. HERO FLEXBOX DIV */
+
+#container-3-lead{
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 140px;
+    
+}
+
+.title-feature-box{
+    flex: 1 0 0;
+    min-width: 160px;
+    border-radius: 5px;
+    margin: 25px;
+    padding: 20px;
+    background-color: #0089DE;
+    padding-bottom: 45px;
+}
+
+.title-feature-box > h3{
+    color: white;
+    text-align: center;
+}
+
+.feature-icon{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.title-feature-box:hover {
+    color: white;
+    background-color:#0F5F91;
+    transition: 0.3s;
+}
+
+/* 04. INFO SECTION FLEXBOX DIV */
+
+#info-section-container{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.info-box{
+    flex: 1 0 0;
+
+    
+    margin: 25px;
+    padding: 20px;
+    
+    padding-bottom: 45px;
+}
+
+.info-box > h3{
+    color: #0F5F91;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.info-box > h4{
+    text-align: center;
+    color: #0089DE;
+} 
+
+.info-button {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #0089DE;
+    color: #0089DE;
+}
+
+.info-button:hover {
+    color: white;
+    background-color:#0089DE;
+    transition: 0.3s;
+}
+
+/* 05. SMITAL MOVIE SLIDER DIV */
+
+#movie-slider {
+    background-color:rgba(15, 137, 222, 0.3);
+    padding: 25px;
+}
+
+#movie-slider > h2{
+    font-weight: 900;
+}
+
+
+
+/* 06. TOP TEN MOVIES */
+
+#leaderboard {
+    text-align: center;
+    background-color:rgba(15, 137, 222, 0.3);
+    padding: 25px;
+    font-weight:900;
+}
+
+#leaderboard > h2{
+    font-weight: 900;
+}
+
+#top-ten-list{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 07. FOOTER */
+
+/* IM USING THE SAME BLANK BAR FOR THE HEADER AND THE FOOTER RIGHT NOW JUST AS A PLACEHOLDER FOR WHEN THE REAL ONES GET ADDED IN. 
+PLEASE FEEL FREE TO MAKE THOSE CHANGES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+============================================================
+|                                                          |
+|999. MEDIA QUERIES (PLEASE LEAVE THESE AT THE BOTTOM)     |
+|                                                          |
+============================================================
+*/
+
+@media screen and (max-width: 1260px) {
+    #container-3-lead{
+        display: flex;
+        flex-wrap: wrap;
+        position: static;      
+    }
+
+    #hero-landing {
+        background-image: linear-gradient(to bottom, rgba(15, 95, 145, 0.5), rgba(117, 19, 93, 0)), url("../assets/heroimg.jpg");
+        height: 125%; /* Temporary for layout */
+        padding: 20px;
+    }
+
+    #register {
+          
+        float: none;
+        display: block;
+        position: static;
+        
+    
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 15px;
+    
+        background-color: rgba(255,255,255,0.9)
+    
+    }
+
+}
